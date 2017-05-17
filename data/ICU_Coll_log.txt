@@ -1,0 +1,53 @@
+>>> Program: ICU-Coll - ver 2.0 - 20.01.02
+Call :    LoadLibraryA                       ICUIN20.DLL
+Call :    LoadLibraryA                       ICUUC20.DLL
+Call API Function :                          ucol_open_2_0
+Call API Function :                          ucnv_open_2_0
+Input Record  --------------:
+BBB
+-----------------------------
+Call API Function :                          ucnv_toUChars_2_0
+Input Record  --------------:
+bbb
+-----------------------------
+Call API Function :                          ucnv_toUChars_2_0
+Input Record  --------------:
+aaa
+-----------------------------
+Call API Function :                          ucnv_toUChars_2_0
+Input Record  --------------:
+AAA
+-----------------------------
+Call API Function :                          ucnv_toUChars_2_0
+Call API Function :                          ucol_strcoll_2_0
+ucol_strcoll - UCollationResult:             UCOL-GREATER
+Call API Function :                          ucol_strcoll_2_0
+ucol_strcoll - UCollationResult:             UCOL-GREATER
+Call API Function :                          ucol_strcoll_2_0
+ucol_strcoll - UCollationResult:             UCOL-GREATER
+Call API Function :                          ucol_strcoll_2_0
+ucol_strcoll - UCollationResult:             UCOL-GREATER
+Call API Function :                          ucol_strcoll_2_0
+ucol_strcoll - UCollationResult:             UCOL-GREATER
+Call API Function :                          ucol_strcoll_2_0
+ucol_strcoll - UCollationResult:             UCOL-LESS
+Call API Function :                          ucnv_fromUChars_2_0
+Output Record  -------------:
+aaa
+-----------------------------
+Call API Function :                          ucnv_fromUChars_2_0
+Output Record  -------------:
+AAA
+-----------------------------
+Call API Function :                          ucnv_fromUChars_2_0
+Output Record  -------------:
+bbb
+-----------------------------
+Call API Function :                          ucnv_fromUChars_2_0
+Output Record  -------------:
+BBB
+-----------------------------
+Call API Function :                          ucnv_close_2_0
+Call API Function :                          ucol_close_2_0
+Call :    FreeLibrary                        ICUUC20.DLL
+Call :    FreeLibrary                        ICUIN20.DLL

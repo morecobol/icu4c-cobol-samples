@@ -1,0 +1,44 @@
+>>> Program: ICU-Norm - ver 2.0 - 20.01.02
+Call :    LoadLibraryA                       ICUUC20.DLL
+Call API Function :                          ucnv_open_2_0
+Input Record  --------------:
+﻿Ã qüíçk bròwn
+-----------------------------
+Call API Function :                          ucnv_toUChars_2_0
+Call API Function :                          unorm_quickCheck_2_0
+unorm_quickCheck: Befor Norm. to UNORM-NFD:  NO
+Call API Function :                          unorm_normalize_2_0
+Call API Function :                          unorm_quickCheck_2_0
+unorm_quickCheck: After Norm. to UNORM-NFD:  YES
+Call API Function :                          ucnv_fromUChars_2_0
+Output Record  -------------:
+﻿Ã qüíçk bròwn
+-----------------------------
+Input Record  --------------:
+A~ qu"i´c¸k bro`wn fo^x ju"mpe^d
+-----------------------------
+Call API Function :                          ucnv_toUChars_2_0
+Call API Function :                          unorm_quickCheck_2_0
+unorm_quickCheck: Befor Norm. to UNORM-NFD:  YES
+Call API Function :                          unorm_normalize_2_0
+Call API Function :                          unorm_quickCheck_2_0
+unorm_quickCheck: After Norm. to UNORM-NFD:  YES
+Call API Function :                          ucnv_fromUChars_2_0
+Output Record  -------------:
+A~ qu"i´c¸k bro`wn fo^x ju"mpe^d
+-----------------------------
+Input Record  --------------:
+ÀÁÂÃÄÅÆÇÈ
+-----------------------------
+Call API Function :                          ucnv_toUChars_2_0
+Call API Function :                          unorm_quickCheck_2_0
+unorm_quickCheck: Befor Norm. to UNORM-NFD:  NO
+Call API Function :                          unorm_normalize_2_0
+Call API Function :                          unorm_quickCheck_2_0
+unorm_quickCheck: After Norm. to UNORM-NFD:  YES
+Call API Function :                          ucnv_fromUChars_2_0
+Output Record  -------------:
+ÀÁÂÃÄÅÆÇÈ
+-----------------------------
+Call API Function :                          ucnv_close_2_0
+Call :    FreeLibrary                        ICUUC20.DLL

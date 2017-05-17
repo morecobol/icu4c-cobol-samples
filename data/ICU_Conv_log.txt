@@ -1,0 +1,62 @@
+>>> Program: ICU-Conv - ver 2.0 - 20.01.02
+Call :    LoadLibraryA                       ICUUC20.DLL
+Call API Function :                          ucnv_countAvailable_2_0
+Call API Function :                          ucnv_getAvailableName_2_0
+Converter-Name        --->                   UTF-16BE
+Call API Function :                          ucnv_getAvailableName_2_0
+Converter-Name        --->                   UTF-16LE
+Call API Function :                          ucnv_getAvailableName_2_0
+Converter-Name        --->                   UTF-16
+Call API Function :                          ucnv_getAvailableName_2_0
+Converter-Name        --->                   UTF16_OppositeEndian
+Call API Function :                          ucnv_getAvailableName_2_0
+Converter-Name        --->                   UTF-32BE
+Call API Function :                          ucnv_getDefaultName_2_0
+Default-Converter     --->                   ibm-5351
+Call API Function :                          ucnv_setDefaultName_2_0
+New Default-Converter --->                   iso-8859-8
+Call API Function :                          ucnv_getDefaultName_2_0
+Default-Converter     --->                   ibm-916
+Input Record  --------------:
+Hello, ΧΧ‘Χ¨Χ”Χ!  how is life in ΧªΧ-ΧΧ‘Χ™Χ‘?
+-----------------------------
+Call API Function :                          ucnv_convert_2_0
+Output Record  -------------:
+Hello, ΰαψδν!  how is life in ϊμ-ΰαια?
+-----------------------------
+Call API Function :                          ucnv_open_2_0
+Call API Function :                          ucnv_open_2_0
+Input Record  --------------:
+Hello, Jack!
+-----------------------------
+Call API Function :                          ucnv_toUChars_2_0
+Call API Function :                          ucnv_fromUChars_2_0
+Output Record  -------------:
+Hello, Jack!
+-----------------------------
+Input Record  --------------:
+™…, €„!
+-----------------------------
+Call API Function :                          ucnv_toUChars_2_0
+Call API Function :                          ucnv_fromUChars_2_0
+Output Record  -------------:
+ωμεν, ΰαψδν!
+-----------------------------
+Input Record  --------------:
+€‚ƒ„…†‡‰‹‘’“”•–—™
+-----------------------------
+Call API Function :                          ucnv_toUChars_2_0
+Call API Function :                          ucnv_fromUChars_2_0
+Output Record  -------------:
+ΰαβγδεζηθικλμνξοπρςστυφχψωϊ
+-----------------------------
+Input Record  --------------:
+BYE, MAN!
+-----------------------------
+Call API Function :                          ucnv_toUChars_2_0
+Call API Function :                          ucnv_fromUChars_2_0
+Output Record  -------------:
+BYE, MAN!
+-----------------------------
+Call API Function :                          ucnv_close_2_0
+Call :    FreeLibrary                        ICUUC20.DLL
